@@ -4,79 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie Nekhay Resume</title>
+    <link rel="stylesheet" href="my_site.css">
 </head>
 <body>
-    <img src="https://avatars.githubusercontent.com/u/37346151?v=4" width="150" alt="здесь находится моя фотография">
+    <div class="container">
+        <div class="info">
+            <img src="https://avatars.githubusercontent.com/u/37346151?v=4"  alt="София Нехай" class="avatar">
+                <div class="info-text">
+                    <h2>София Нехай</h2>
+                    <p>Я <strong>люблю</strong> <em>читать книги, кататься на велосипеде и программировать</em></p>
 
-    <h2>София Нехай</h2>
-    <p>Я <strong>люблю</strong> <em>читать книги, кататься на велосипеде и программировать</em></p>
-
-    <div id="network">
-        <h3>Список социальных сетей</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/sophienekhay/">Instagram</a></li>
-            <li><a href="https://t.me/sophienekhay">Telegram</a></li>
-            <li><a href="https://www.linkedin.com/in/sofiya-nekhay-1b44b7142/">Linkedin</a></li>
-        </ul>
-    </div>
-
-    <div class="hobby">
-        <h3>Мои хобби</h3>
-        <ol>
-            <li>Городской хайкинг</li>
-            <li>Чтение книг</li>
-            <li>Велопрогулки</li>
-            <li>Самообучение рисованию</li>
-            <li>Занятия спортом</li>
-        </ol>
-    </div>
-
-    <div class="resume"></div>
-    <h3>Опыт работы</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-    <tbody>
-        <tr>
-            <td>PROMT</td>
-            <td>Computational linguist</td>
-            <td>2018-2019</td>
-        </tr>
-        <tr>
-            <td>SRC Group</td>
-            <td>Computational linguist</td>
-            <td>2019-2020</td>
-        </tr>
-        <tr>
-            <td>Nord.Codes</td>
-            <td>Junior QA Engineer</td>
-            <td>2020-2023</td>
-        </tr>
-        </tbody>  
-    </table>
-    <div>
-        <h3>Связаться со мной:</h3>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                    <h3>Список социальных сетей</h3>
+                            <a href="https://www.instagram.com/sophienekhay/" target="_blank">Instagram</a>
+                            <a href="https://t.me/sophienekhay" target="_blank">Telegram</a>
+                            <a href="https://www.linkedin.com/in/sofiya-nekhay-1b44b7142/" target="_blank">Linkedin</a>
+                </div>
         </div>
-        <div>
-            <label for="email2">Ваш email:</label>
-            <input type="email" id="email2" placeholder="Введите email">
+
+        <div class="card bg-green">
+            <h3>Мои хобби</h3>
+            <ol class="list">
+                <li>Городской хайкинг</li>
+                <li>Чтение книг</li>
+                <li>Велопрогулки</li>
+                <li>Самообучение рисованию</li>
+                <li>Занятия спортом</li>
+            </ol>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" placeholder="Введите сообщение..." cols="25" row="5"></textarea>
+
+        <div class="card bg-red">
+            <h3>Опыт работы</h3>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+            <tbody>
+                <tr>
+                    <td>PROMT</td>
+                    <td>Computational linguist</td>
+                    <td>2018-2019</td>
+                </tr>
+                <tr>
+                    <td>SRC Group</td>
+                    <td>Computational linguist</td>
+                    <td>2019-2020</td>
+                </tr>
+                <tr>
+                    <td>Nord.Codes</td>
+                    <td>Junior QA Engineer</td>
+                    <td>2020-2023</td>
+                </tr>
+                </tbody>  
+            </table>
         </div>
-        <button type="submit">Отправить!</button>
+
+
+            <form action="/" class="form">
+                <h3>Связаться со мной:</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <br>
+                    <textarea id="message" placeholder="Введите сообщение..." cols="25" row="5"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Отправить!">
+            </form>
     </div>
-    
 
 
 </body>
